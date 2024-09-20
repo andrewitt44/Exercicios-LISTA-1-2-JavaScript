@@ -1,5 +1,21 @@
-let numeros = [1, 2, 3, 4, 5];
-let pares = numeros.filter(function(numero) {
-  return numero % 2 === 0;
-});
-console.log(pares); // [2, 4]
+let texto = "Exemplo de uma string para teste da questão"
+
+let contador = 0;
+
+function contarVogais() {
+
+  for (i = 0; i < texto.length; i++) {
+
+    if (texto.charAt(i) == "a" || texto.charAt(i) == "e" || texto.charAt(i) == "i" || texto.charAt(i) == "o" || texto.charAt(i) == "u") {
+      contador++
+    } else if (texto.charAt(i) == "A" || texto.charAt(i) == "E" || texto.charAt(i) == "I" || texto.charAt(i) == "O" || texto.charAt(i) == "U") {
+      contador++
+    }
+
+  }
+
+  return contador;
+
+}
+
+console.log(contarVogais())

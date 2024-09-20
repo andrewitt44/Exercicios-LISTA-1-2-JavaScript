@@ -1,5 +1,12 @@
-function criarArray (numero){
-    for (let index = 0; index > numero; index++) {
-        console.log(index)
+let arrayNumeros = [];
+let numero = 33;
+
+function arrayNovo() {
+    for (i = 0; i < numero; i++) {
+        arrayNumeros.push(i + 1)
     }
 }
+
+arrayNovo()
+
+console.log("Array até o número: " + numero + "\n" + arrayNumeros)
