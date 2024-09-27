@@ -16,7 +16,8 @@ let conta = {
     }
 }
 
-do {
+conta.depositar();
 
-} while ( escolha != )
+conta.sacar();
 
+conta.verSaldo();
