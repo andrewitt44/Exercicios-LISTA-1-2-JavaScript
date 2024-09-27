@@ -1,9 +1,9 @@
-const nascimentoA  = '2021-10-05';
+const nascimentoAndre = '2007-01-17';
 
-const d2    = '2021-11-12';
+const nascimentoFernanda = '2006-10-31';
 
-const diffInMs   = new Date(d2) - new Date(d1)
+const diferencaMeses = new Date(nascimentoAndre) - new Date(nascimentoFernanda)
 
-const diffInDays = diffInMs / (1000 * 60 * 60 * 24);
+const diferencaDias = diferencaMeses / (1000 * 60 * 60 * 24);
 
-console.log(diffInDays) // 38
+console.log("A diferença de dias da data: " + nascimentoAndre + " para a data: " + nascimentoFernanda +" é de " +diferencaDias + " dias.");

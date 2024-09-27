@@ -1,5 +1,9 @@
-const shortData = new Date ("02/24/2022");
+let hoje = new Date();
 
-shortData + 100;
+hoje.setDate(hoje.getDate() + 100);
 
-console.log(shortData);
+let dia = String(hoje.getDate()).padStart(2, '0');
+let mes = String(hoje.getMonth() + 1).padStart(2, '0');
+let ano = hoje.getFullYear();
+
+console.log("A data daqui a 100 dias será: " + dia + "/" + mes + "/" + ano);
